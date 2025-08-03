@@ -16,7 +16,7 @@ export default function Home() {
                 <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 animate-fade-in font-cinzel-black knight-text-shadow">
                   Engarde Eskrim
                 </h1>
-                <p className="text-xl md:text-2xl mb-8 text-blue-100 animate-fade-in-delay font-cinzel">
+                <p className="text-xl md:text-2xl mb-8 text-blue-100 animate-fade-in-delay font-cinzel whitespace-nowrap">
                   Modern eskrim kulübü - Kılıç sanatının inceliklerini keşfedin
                 </p>
               </div>
