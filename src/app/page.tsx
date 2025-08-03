@@ -9,13 +9,13 @@ export default function Home() {
         <div className="relative z-10 container mx-auto px-4 py-20 lg:py-32">
           <div className="text-center max-w-4xl mx-auto">
             <div className="flex flex-col lg:flex-row items-center justify-center gap-8 mb-8">
-              <div className="w-40 h-40 lg:w-48 lg:h-48 flex items-center justify-center animate-fade-in overflow-hidden">
+              <div className="w-48 h-48 lg:w-56 lg:h-56 flex items-center justify-center animate-fade-in overflow-hidden">
                 <Image
                   src="/engardelogo.png"
                   alt="Engarde Eskrim Logo"
-                  width={160}
-                  height={160}
-                  className="w-36 h-36 lg:w-44 lg:h-44 object-cover rounded-full"
+                  width={200}
+                  height={200}
+                  className="w-44 h-44 lg:w-52 lg:h-52 object-cover rounded-full"
                   priority
                 />
               </div>
