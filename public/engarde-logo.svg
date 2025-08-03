@@ -5,53 +5,82 @@
     </clipPath>
   </defs>
   
-  <!-- Dış çerçeve -->
-  <circle cx="100" cy="100" r="100" fill="#1e3a8a" stroke="#3b82f6" stroke-width="2"/>
+  <!-- Dış çerçeve - 3 halka -->
+  <circle cx="100" cy="100" r="100" fill="none" stroke="#1e3a8a" stroke-width="1"/>
+  <circle cx="100" cy="100" r="98" fill="none" stroke="#3b82f6" stroke-width="3"/>
+  <circle cx="100" cy="100" r="95" fill="none" stroke="#1e3a8a" stroke-width="1"/>
   
-  <!-- İç çerçeve -->
-  <circle cx="100" cy="100" r="95" fill="#f5f5dc"/>
+  <!-- İç arka plan -->
+  <circle cx="100" cy="100" r="94" fill="#f5f5dc"/>
   
-  <!-- Metin: EN GARDE -->
-  <path d="M 30 60 A 40 40 0 0 1 170 60" fill="none" stroke="#1e3a8a" stroke-width="2"/>
-  <text x="100" y="55" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1e3a8a">EN GARDE</text>
+  <!-- Üst yay metni: EN GARDE ESKRİM İSTANBUL -->
+  <path d="M 25 65 A 45 45 0 0 1 175 65" fill="none" stroke="#1e3a8a" stroke-width="1" opacity="0.3"/>
+  <text x="100" y="60" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="bold" fill="#1e3a8a" letter-spacing="1">EN GARDE</text>
+  <text x="100" y="70" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#1e3a8a" letter-spacing="1">ESKRİM</text>
+  <text x="100" y="80" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="bold" fill="#1e3a8a" letter-spacing="1">İSTANBUL</text>
   
-  <!-- Metin: ESKRİM -->
-  <text x="100" y="75" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#1e3a8a">ESKRİM</text>
+  <!-- Alt metin: 2025 -->
+  <text x="100" y="150" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#1e3a8a" letter-spacing="2">2025</text>
   
-  <!-- Metin: İSTANBUL -->
-  <path d="M 30 85 A 40 40 0 0 1 170 85" fill="none" stroke="#1e3a8a" stroke-width="2"/>
-  <text x="100" y="90" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#1e3a8a">İSTANBUL</text>
-  
-  <!-- Yıldızlar -->
+  <!-- Sol yıldızlar -->
   <g fill="#1e3a8a">
-    <polygon points="70,110 72,115 77,115 73,118 75,123 70,120 65,123 67,118 63,115 68,115" transform="scale(0.3)"/>
-    <polygon points="80,110 82,115 87,115 83,118 85,123 80,120 75,123 77,118 73,115 78,115" transform="scale(0.3)"/>
-    <polygon points="90,110 92,115 97,115 93,118 95,123 90,120 85,123 87,118 83,115 88,115" transform="scale(0.3)"/>
-    <polygon points="100,110 102,115 107,115 103,118 105,123 100,120 95,123 97,118 93,115 98,115" transform="scale(0.3)"/>
-    <polygon points="110,110 112,115 117,115 113,118 115,123 110,120 105,123 107,118 103,115 108,115" transform="scale(0.3)"/>
-    <polygon points="120,110 122,115 127,115 123,118 125,123 120,120 115,123 117,118 113,115 118,115" transform="scale(0.3)"/>
-    <polygon points="130,110 132,115 137,115 133,118 135,123 130,120 125,123 127,118 123,115 128,115" transform="scale(0.3)"/>
+    <polygon points="40,110 42,112 44,110 42,108" transform="scale(0.8)"/>
+    <polygon points="45,105 47,107 49,105 47,103" transform="scale(0.8)"/>
+    <polygon points="50,100 52,102 54,100 52,98" transform="scale(0.8)"/>
+    <polygon points="55,105 57,107 59,105 57,103" transform="scale(0.8)"/>
+    <polygon points="60,110 62,112 64,110 62,108" transform="scale(0.8)"/>
   </g>
   
-  <!-- Metin: 2025 -->
-  <text x="100" y="140" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#1e3a8a">2025</text>
+  <!-- Sağ yıldızlar -->
+  <g fill="#1e3a8a">
+    <polygon points="140,110 142,112 144,110 142,108" transform="scale(0.8)"/>
+    <polygon points="145,105 147,107 149,105 147,103" transform="scale(0.8)"/>
+    <polygon points="150,100 152,102 154,100 152,98" transform="scale(0.8)"/>
+    <polygon points="155,105 157,107 159,105 157,103" transform="scale(0.8)"/>
+    <polygon points="160,110 162,112 164,110 162,108" transform="scale(0.8)"/>
+  </g>
   
   <!-- Şövalye ve At Figürü -->
   <g fill="#000000" clip-path="url(#circleClip)">
-    <!-- At -->
-    <path d="M 60 120 Q 70 110 80 115 Q 90 120 100 125 Q 110 120 120 115 Q 130 110 140 120 L 135 125 Q 125 130 115 135 Q 105 130 95 135 Q 85 130 75 125 Z"/>
+    <!-- At - daha detaylı -->
+    <path d="M 70 130 Q 80 120 90 125 Q 100 130 110 125 Q 120 120 130 130 L 125 135 Q 115 140 105 145 Q 95 140 85 145 Q 75 140 65 135 Z" fill="#000000"/>
     
-    <!-- Şövalye -->
-    <circle cx="100" cy="110" r="8" fill="#000000"/> <!-- Kafa -->
-    <rect x="95" y="118" width="10" height="15" fill="#000000"/> <!-- Vücut -->
-    <rect x="92" y="125" width="16" height="3" fill="#000000"/> <!-- Kollar -->
-    <rect x="98" y="133" width="4" height="8" fill="#000000"/> <!-- Bacaklar -->
+    <!-- At bacakları -->
+    <rect x="75" y="135" width="3" height="8" fill="#000000"/>
+    <rect x="85" y="135" width="3" height="8" fill="#000000"/>
+    <rect x="105" y="135" width="3" height="8" fill="#000000"/>
+    <rect x="115" y="135" width="3" height="8" fill="#000000"/>
     
-    <!-- Kılıç -->
-    <line x1="108" y1="120" x2="130" y2="105" stroke="#000000" stroke-width="2"/>
-    <rect x="128" y="103" width="4" height="6" fill="#000000"/> <!-- Kılıç ucu -->
+    <!-- At yelesi -->
+    <path d="M 80 125 Q 85 120 90 125" stroke="#000000" stroke-width="2" fill="none"/>
+    <path d="M 85 123 Q 90 118 95 123" stroke="#000000" stroke-width="2" fill="none"/>
+    
+    <!-- Şövalye - daha detaylı -->
+    <circle cx="100" cy="115" r="10" fill="#000000"/> <!-- Kafa -->
+    
+    <!-- Miğfer -->
+    <path d="M 90 105 Q 100 100 110 105 L 108 115 Q 92 115 Z" fill="#000000"/>
     
     <!-- Miğfer tüyü -->
-    <path d="M 100 102 Q 105 98 110 102" stroke="#000000" stroke-width="2" fill="none"/>
+    <path d="M 100 100 Q 105 95 110 100" stroke="#000000" stroke-width="3" fill="none"/>
+    <path d="M 102 98 Q 107 93 112 98" stroke="#000000" stroke-width="2" fill="none"/>
+    
+    <!-- Vücut -->
+    <rect x="95" y="125" width="10" height="15" fill="#000000"/>
+    
+    <!-- Kollar -->
+    <rect x="90" y="130" width="20" height="4" fill="#000000"/>
+    
+    <!-- Bacaklar -->
+    <rect x="98" y="140" width="4" height="10" fill="#000000"/>
+    
+    <!-- Kılıç - daha uzun ve detaylı -->
+    <line x1="110" y1="125" x2="140" y2="110" stroke="#000000" stroke-width="3"/>
+    <rect x="138" y="108" width="6" height="8" fill="#000000"/> <!-- Kılıç ucu -->
+    <rect x="108" y="123" width="4" height="6" fill="#000000"/> <!-- Kılıç kabzası -->
+    
+    <!-- Kalkan -->
+    <ellipse cx="85" cy="130" rx="8" ry="12" fill="#000000"/>
+    <ellipse cx="85" cy="130" rx="6" ry="10" fill="#f5f5dc"/>
   </g>
 </svg> 
