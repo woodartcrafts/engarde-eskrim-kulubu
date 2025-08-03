@@ -9,23 +9,23 @@ export default function Home() {
         <div className="relative z-10 container mx-auto px-4 py-20 lg:py-32">
           <div className="text-center max-w-4xl mx-auto">
             <div className="flex flex-col lg:flex-row items-center justify-center gap-8 mb-8">
-              <div className="w-32 h-32 lg:w-40 lg:h-40 bg-white/20 rounded-full flex items-center justify-center animate-fade-in">
+              <div className="w-32 h-32 lg:w-40 lg:h-40 bg-white/20 rounded-full flex items-center justify-center animate-fade-in knight-border">
                 <div className="text-6xl lg:text-8xl">⚔️</div>
               </div>
               <div>
-                <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 animate-fade-in">
+                <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 animate-fade-in font-cinzel-black knight-text-shadow">
                   Engarde Eskrim
                 </h1>
-                <p className="text-xl md:text-2xl mb-8 text-blue-100 animate-fade-in-delay">
+                <p className="text-xl md:text-2xl mb-8 text-blue-100 animate-fade-in-delay font-cinzel">
                   Modern eskrim kulübü - Kılıç sanatının inceliklerini keşfedin
                 </p>
               </div>
             </div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-delay-2">
-              <button className="bg-white text-blue-600 px-8 py-4 rounded-full font-semibold hover:bg-blue-50 transition-all duration-300 transform hover:scale-105">
+              <button className="bg-white text-blue-600 px-8 py-4 rounded-full font-semibold hover:bg-blue-50 transition-all duration-300 transform hover:scale-105 btn-knight knight-border">
                 Üye Ol
               </button>
-              <button className="border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-blue-600 transition-all duration-300 transform hover:scale-105">
+              <button className="border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-blue-600 transition-all duration-300 transform hover:scale-105 btn-knight">
                 Dersler
               </button>
             </div>
@@ -42,10 +42,10 @@ export default function Home() {
       <section className="py-20 bg-white dark:bg-slate-900">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4 font-cinzel-black knight-text-shadow">
               Kulübümüzün Özellikleri
             </h2>
-            <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+            <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto font-cinzel">
               Profesyonel eğitmenler eşliğinde modern eskrim teknikleri
             </p>
           </div>
@@ -68,12 +68,12 @@ export default function Home() {
                 icon: "🎯"
               }
             ].map((feature, index) => (
-              <div key={index} className="bg-gradient-to-br from-gray-50 to-blue-50 dark:from-slate-800 dark:to-slate-700 p-8 rounded-2xl hover:transform hover:scale-105 transition-all duration-300">
+              <div key={index} className="bg-gradient-to-br from-gray-50 to-blue-50 dark:from-slate-800 dark:to-slate-700 p-8 rounded-2xl hover:transform hover:scale-105 transition-all duration-300 knight-border">
                 <div className="text-4xl mb-4">{feature.icon}</div>
-                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">
+                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3 font-cinzel-bold">
                   {feature.title}
                 </h3>
-                <p className="text-gray-600 dark:text-gray-300">
+                <p className="text-gray-600 dark:text-gray-300 font-cinzel">
                   {feature.description}
                 </p>
               </div>
@@ -87,34 +87,34 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6 font-cinzel-black knight-text-shadow">
                 Hakkımızda
               </h2>
-              <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+              <p className="text-lg text-gray-600 dark:text-gray-300 mb-6 font-cinzel">
                 Engarde Eskrim Kulübü, modern eskrim tekniklerini öğretmek ve 
                 bu antik sporun inceliklerini yeni nesillere aktarmak amacıyla kurulmuştur. 
                 Profesyonel eğitmenlerimiz eşliğinde güvenli ve eğlenceli bir ortamda 
                 eskrim sanatını öğrenin.
               </p>
               <div className="flex flex-wrap gap-4">
-                <span className="bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-medium">
+                <span className="bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-medium font-cinzel-bold">
                   Foil
                 </span>
-                <span className="bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-medium">
+                <span className="bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-medium font-cinzel-bold">
                   Epee
                 </span>
-                <span className="bg-purple-100 text-purple-800 px-4 py-2 rounded-full text-sm font-medium">
+                <span className="bg-purple-100 text-purple-800 px-4 py-2 rounded-full text-sm font-medium font-cinzel-bold">
                   Sabre
                 </span>
-                <span className="bg-orange-100 text-orange-800 px-4 py-2 rounded-full text-sm font-medium">
+                <span className="bg-orange-100 text-orange-800 px-4 py-2 rounded-full text-sm font-medium font-cinzel-bold">
                   Antrenman
                 </span>
               </div>
             </div>
             <div className="relative">
-              <div className="bg-gradient-to-br from-blue-500 to-purple-600 p-8 rounded-2xl text-white">
-                <h3 className="text-2xl font-bold mb-4">Eskrim Kategorileri</h3>
-                <ul className="space-y-2">
+              <div className="bg-gradient-to-br from-blue-500 to-purple-600 p-8 rounded-2xl text-white knight-border">
+                <h3 className="text-2xl font-bold mb-4 font-cinzel-black">Eskrim Kategorileri</h3>
+                <ul className="space-y-2 font-cinzel">
                   <li className="flex items-center">
                     <span className="mr-2">⚔️</span>
                     Foil (Flöre) - Teknik ve hız
@@ -141,18 +141,18 @@ export default function Home() {
       {/* Contact Section */}
       <section className="py-20 bg-white dark:bg-slate-900">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6 font-cinzel-black knight-text-shadow">
             İletişime Geçin
           </h2>
-          <p className="text-lg text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto">
+          <p className="text-lg text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto font-cinzel">
             Eskrim dünyasına adım atmak için bizimle iletişime geçin. 
             Ücretsiz deneme dersi için kayıt olun.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-blue-600 text-white px-8 py-4 rounded-full font-semibold hover:bg-blue-700 transition-all duration-300 transform hover:scale-105">
+            <button className="bg-blue-600 text-white px-8 py-4 rounded-full font-semibold hover:bg-blue-700 transition-all duration-300 transform hover:scale-105 btn-knight knight-border">
               Deneme Dersi
             </button>
-            <button className="border-2 border-blue-600 text-blue-600 px-8 py-4 rounded-full font-semibold hover:bg-blue-600 hover:text-white transition-all duration-300 transform hover:scale-105">
+            <button className="border-2 border-blue-600 text-blue-600 px-8 py-4 rounded-full font-semibold hover:bg-blue-600 hover:text-white transition-all duration-300 transform hover:scale-105 btn-knight">
               Bilgi Al
             </button>
           </div>
@@ -163,13 +163,13 @@ export default function Home() {
       <footer className="bg-gray-900 text-white py-12">
         <div className="container mx-auto px-4 text-center">
           <div className="mb-8">
-            <h3 className="text-2xl font-bold mb-4">Engarde Eskrim Kulübü</h3>
-            <p className="text-gray-400">
+            <h3 className="text-2xl font-bold mb-4 font-cinzel-black">Engarde Eskrim Kulübü</h3>
+            <p className="text-gray-400 font-cinzel">
               Modern eskrim teknikleri ve profesyonel eğitim
             </p>
           </div>
           <div className="border-t border-gray-800 pt-8">
-            <p className="text-gray-400">
+            <p className="text-gray-400 font-cinzel">
               © 2024 Engarde Eskrim Kulübü. Tüm hakları saklıdır.
             </p>
           </div>
