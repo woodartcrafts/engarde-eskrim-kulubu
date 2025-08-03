@@ -16,7 +16,7 @@ const nextConfig: NextConfig = {
   
   // Experimental özellikler
   experimental: {
-    optimizeCss: true,
+    optimizeCss: false,
     optimizePackageImports: ['@next/font'],
   },
   
