@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function NotFound() {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-50 to-blue-50 dark:from-slate-900 dark:to-slate-800">
@@ -11,12 +13,12 @@ export default function NotFound() {
         <p className="text-gray-600 dark:text-gray-400 mb-8 font-cinzel">
           Aradığınız sayfa mevcut değil veya taşınmış olabilir.
         </p>
-        <a
+        <Link
           href="/"
-          className="bg-blue-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-blue-700 transition-all duration-300 transform hover:scale-105 btn-knight knight-border"
+          className="bg-blue-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-blue-700 transition-all duration-300 transform hover:scale-105 btn-knight knight-border inline-block"
         >
           Ana Sayfaya Dön
-        </a>
+        </Link>
       </div>
     </div>
   );
