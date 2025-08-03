@@ -3,7 +3,7 @@ import { Suspense } from "react";
 
 export default function Home() {
   return (
-    <div className="min-h-screen overflow-x-hidden w-full">
+    <div className="min-h-screen overflow-x-hidden w-full max-w-full">
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-gradient-to-br from-blue-600 via-purple-600 to-indigo-700 text-white py-1 lg:py-2 flex items-center w-full">
         <div className="absolute inset-0 bg-black/20"></div>
