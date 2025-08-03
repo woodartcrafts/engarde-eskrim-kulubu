@@ -1,0 +1,57 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <clipPath id="circleClip">
+      <circle cx="100" cy="100" r="95"/>
+    </clipPath>
+  </defs>
+  
+  <!-- Dış çerçeve -->
+  <circle cx="100" cy="100" r="100" fill="#1e3a8a" stroke="#3b82f6" stroke-width="2"/>
+  
+  <!-- İç çerçeve -->
+  <circle cx="100" cy="100" r="95" fill="#f5f5dc"/>
+  
+  <!-- Metin: EN GARDE -->
+  <path d="M 30 60 A 40 40 0 0 1 170 60" fill="none" stroke="#1e3a8a" stroke-width="2"/>
+  <text x="100" y="55" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1e3a8a">EN GARDE</text>
+  
+  <!-- Metin: ESKRİM -->
+  <text x="100" y="75" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#1e3a8a">ESKRİM</text>
+  
+  <!-- Metin: İSTANBUL -->
+  <path d="M 30 85 A 40 40 0 0 1 170 85" fill="none" stroke="#1e3a8a" stroke-width="2"/>
+  <text x="100" y="90" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#1e3a8a">İSTANBUL</text>
+  
+  <!-- Yıldızlar -->
+  <g fill="#1e3a8a">
+    <polygon points="70,110 72,115 77,115 73,118 75,123 70,120 65,123 67,118 63,115 68,115" transform="scale(0.3)"/>
+    <polygon points="80,110 82,115 87,115 83,118 85,123 80,120 75,123 77,118 73,115 78,115" transform="scale(0.3)"/>
+    <polygon points="90,110 92,115 97,115 93,118 95,123 90,120 85,123 87,118 83,115 88,115" transform="scale(0.3)"/>
+    <polygon points="100,110 102,115 107,115 103,118 105,123 100,120 95,123 97,118 93,115 98,115" transform="scale(0.3)"/>
+    <polygon points="110,110 112,115 117,115 113,118 115,123 110,120 105,123 107,118 103,115 108,115" transform="scale(0.3)"/>
+    <polygon points="120,110 122,115 127,115 123,118 125,123 120,120 115,123 117,118 113,115 118,115" transform="scale(0.3)"/>
+    <polygon points="130,110 132,115 137,115 133,118 135,123 130,120 125,123 127,118 123,115 128,115" transform="scale(0.3)"/>
+  </g>
+  
+  <!-- Metin: 2025 -->
+  <text x="100" y="140" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#1e3a8a">2025</text>
+  
+  <!-- Şövalye ve At Figürü -->
+  <g fill="#000000" clip-path="url(#circleClip)">
+    <!-- At -->
+    <path d="M 60 120 Q 70 110 80 115 Q 90 120 100 125 Q 110 120 120 115 Q 130 110 140 120 L 135 125 Q 125 130 115 135 Q 105 130 95 135 Q 85 130 75 125 Z"/>
+    
+    <!-- Şövalye -->
+    <circle cx="100" cy="110" r="8" fill="#000000"/> <!-- Kafa -->
+    <rect x="95" y="118" width="10" height="15" fill="#000000"/> <!-- Vücut -->
+    <rect x="92" y="125" width="16" height="3" fill="#000000"/> <!-- Kollar -->
+    <rect x="98" y="133" width="4" height="8" fill="#000000"/> <!-- Bacaklar -->
+    
+    <!-- Kılıç -->
+    <line x1="108" y1="120" x2="130" y2="105" stroke="#000000" stroke-width="2"/>
+    <rect x="128" y="103" width="4" height="6" fill="#000000"/> <!-- Kılıç ucu -->
+    
+    <!-- Miğfer tüyü -->
+    <path d="M 100 102 Q 105 98 110 102" stroke="#000000" stroke-width="2" fill="none"/>
+  </g>
+</svg> 
