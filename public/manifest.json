@@ -1,0 +1,27 @@
+{
+  "name": "Engarde Eskrim Kulübü",
+  "short_name": "Engarde Eskrim",
+  "description": "Modern eskrim eğitimi ve profesyonel antrenman",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#3B82F6",
+  "theme_color": "#3B82F6",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/engardelogo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/engardelogo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["sports", "education"],
+  "lang": "tr",
+  "dir": "ltr"
+} 

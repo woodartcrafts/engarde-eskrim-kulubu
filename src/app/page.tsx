@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { Suspense } from "react";
 
 export default function Home() {
   return (
@@ -10,12 +11,19 @@ export default function Home() {
           <div className="text-center max-w-6xl mx-auto">
             <div className="flex flex-col lg:flex-row items-center justify-center gap-2 mb-0">
               <div className="w-[8rem] h-[8rem] lg:w-[10rem] lg:h-[10rem] flex items-center justify-center animate-fade-in lg:mr-auto">
-                <img
-                  src="/engardelogo.png"
-                  alt="Engarde Eskrim Logo"
-                  className="w-full h-full object-contain drop-shadow-2xl"
-                  style={{maxWidth: '100%', maxHeight: '100%'}}
-                />
+                <Suspense fallback={<div className="w-full h-full bg-gray-200 animate-pulse rounded"></div>}>
+                  <Image
+                    src="/engardelogo.png"
+                    alt="Engarde Eskrim Logo"
+                    width={400}
+                    height={400}
+                    className="w-full h-full object-contain drop-shadow-2xl"
+                    priority
+                    quality={90}
+                    placeholder="blur"
+                    blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R//2Q=="
+                  />
+                </Suspense>
               </div>
               <div className="lg:max-w-xl">
                 <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-0 animate-fade-in font-cinzel-black knight-text-shadow leading-tight whitespace-nowrap">
