@@ -14,6 +14,8 @@ const eslintConfig = [
   {
     rules: {
       "@next/next/google-font-preconnect": "off",
+      "@typescript-eslint/no-unused-vars": "warn",
+      "@next/next/no-img-element": "warn",
     },
   },
 ];
