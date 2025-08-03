@@ -3,12 +3,12 @@ import { Suspense } from "react";
 
 export default function Home() {
   return (
-    <div className="min-h-screen overflow-x-hidden">
+    <div className="min-h-screen overflow-x-hidden w-full">
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-blue-600 via-purple-600 to-indigo-700 text-white py-1 lg:py-2 flex items-center">
+      <section className="relative overflow-hidden bg-gradient-to-br from-blue-600 via-purple-600 to-indigo-700 text-white py-1 lg:py-2 flex items-center w-full">
         <div className="absolute inset-0 bg-black/20"></div>
-        <div className="relative z-10 container mx-auto px-4 py-0 lg:py-1">
-          <div className="text-center max-w-6xl mx-auto">
+        <div className="relative z-10 container mx-auto px-4 py-0 lg:py-1 w-full">
+          <div className="text-center max-w-6xl mx-auto w-full">
             <div className="flex flex-col lg:flex-row items-center justify-center gap-2 mb-0">
               <div className="w-[8rem] h-[8rem] lg:w-[10rem] lg:h-[10rem] flex items-center justify-center animate-fade-in lg:mr-auto">
                 <Suspense fallback={<div className="w-full h-full bg-gray-200 animate-pulse rounded"></div>}>
@@ -54,9 +54,9 @@ export default function Home() {
       </section>
 
       {/* Features Section */}
-      <section className="py-20 bg-white dark:bg-slate-900 relative">
+      <section className="py-20 bg-white dark:bg-slate-900 relative w-full">
         <div className="absolute inset-0 bg-gradient-to-r from-blue-50/30 to-purple-50/30 dark:from-blue-900/10 dark:to-purple-900/10 parallax-bg"></div>
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-4 w-full">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6 font-cinzel-black knight-text-shadow">
               Kulübümüzün Özellikleri
@@ -102,9 +102,9 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section className="py-20 bg-gradient-to-br from-slate-50 to-blue-50 dark:from-slate-900 dark:to-slate-800 relative">
+      <section className="py-20 bg-gradient-to-br from-slate-50 to-blue-50 dark:from-slate-900 dark:to-slate-800 relative w-full">
         <div className="absolute inset-0 bg-gradient-to-br from-blue-100/20 to-purple-100/20 dark:from-blue-800/10 dark:to-purple-800/10 parallax-bg-reverse"></div>
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-4 w-full">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
               <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-8 font-cinzel-black knight-text-shadow">
@@ -167,8 +167,8 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-      <section className="py-20 bg-white dark:bg-slate-900">
-        <div className="container mx-auto px-4 text-center">
+      <section className="py-20 bg-white dark:bg-slate-900 w-full">
+        <div className="container mx-auto px-4 text-center w-full">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-8 font-cinzel-black knight-text-shadow">
             İletişime Geçin
           </h2>
@@ -188,8 +188,8 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-gray-900 text-white py-12">
-        <div className="container mx-auto px-4">
+      <footer className="bg-gray-900 text-white py-12 w-full">
+        <div className="container mx-auto px-4 w-full">
           {/* Ana Footer İçeriği */}
           <div className="grid md:grid-cols-3 gap-8 mb-8">
             {/* Kulüp Bilgileri */}
