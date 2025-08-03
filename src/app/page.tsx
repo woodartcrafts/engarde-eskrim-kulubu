@@ -213,29 +213,29 @@ export default function Home() {
 
           {/* Yasal Linkler */}
           <div className="border-t border-gray-800 pt-8">
-            <div className="flex flex-col md:flex-row justify-between items-center">
-              <div className="mb-4 md:mb-0">
-                <p className="text-gray-400 font-cinzel">
+            <div className="flex flex-col lg:flex-row justify-between items-center space-y-4 lg:space-y-0">
+              <div>
+                <p className="text-gray-400 font-cinzel text-center lg:text-left">
                   © 2024 Engarde Eskrim Kulübü. Tüm hakları saklıdır.
                 </p>
               </div>
-              <div className="flex flex-wrap gap-6 text-sm">
-                <a href="#" className="text-gray-400 hover:text-white transition-colors font-cinzel">
+              <div className="flex flex-wrap justify-center lg:justify-end gap-4 lg:gap-6 text-sm">
+                <a href="#" className="text-gray-400 hover:text-white transition-colors font-cinzel whitespace-nowrap">
                   Gizlilik Politikası
                 </a>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors font-cinzel">
+                <a href="#" className="text-gray-400 hover:text-white transition-colors font-cinzel whitespace-nowrap">
                   Kullanım Şartları
                 </a>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors font-cinzel">
+                <a href="#" className="text-gray-400 hover:text-white transition-colors font-cinzel whitespace-nowrap">
                   Çerez Politikası
                 </a>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors font-cinzel">
+                <a href="#" className="text-gray-400 hover:text-white transition-colors font-cinzel whitespace-nowrap">
                   KVKK
                 </a>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors font-cinzel">
+                <a href="#" className="text-gray-400 hover:text-white transition-colors font-cinzel whitespace-nowrap">
                   Sorumluluk Reddi
                 </a>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors font-cinzel">
+                <a href="#" className="text-gray-400 hover:text-white transition-colors font-cinzel whitespace-nowrap">
                   İletişim
                 </a>
               </div>
