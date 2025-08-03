@@ -163,9 +163,9 @@ export default function Home() {
       <footer className="bg-gray-900 text-white py-12">
         <div className="container mx-auto px-4">
           {/* Ana Footer İçeriği */}
-          <div className="grid md:grid-cols-4 gap-8 mb-8">
+          <div className="grid md:grid-cols-3 gap-8 mb-8">
             {/* Kulüp Bilgileri */}
-            <div className="md:col-span-2">
+            <div>
               <h3 className="text-2xl font-bold mb-4 font-cinzel-black">Engarde Eskrim Kulübü</h3>
               <p className="text-gray-400 font-cinzel mb-4">
                 Modern eskrim teknikleri ve profesyonel eğitim. 
@@ -213,29 +213,29 @@ export default function Home() {
 
           {/* Yasal Linkler */}
           <div className="border-t border-gray-800 pt-8">
-            <div className="flex flex-col lg:flex-row justify-between items-center space-y-4 lg:space-y-0">
-              <div>
-                <p className="text-gray-400 font-cinzel text-center lg:text-left">
+            <div className="flex flex-col md:flex-row justify-between items-center">
+              <div className="mb-4 md:mb-0">
+                <p className="text-gray-400 font-cinzel">
                   © 2024 Engarde Eskrim Kulübü. Tüm hakları saklıdır.
                 </p>
               </div>
-              <div className="flex flex-wrap justify-center lg:justify-end gap-4 lg:gap-6 text-sm">
-                <a href="#" className="text-gray-400 hover:text-white transition-colors font-cinzel whitespace-nowrap">
+              <div className="flex flex-wrap gap-4 text-sm">
+                <a href="#" className="text-gray-400 hover:text-white transition-colors font-cinzel">
                   Gizlilik Politikası
                 </a>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors font-cinzel whitespace-nowrap">
+                <a href="#" className="text-gray-400 hover:text-white transition-colors font-cinzel">
                   Kullanım Şartları
                 </a>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors font-cinzel whitespace-nowrap">
+                <a href="#" className="text-gray-400 hover:text-white transition-colors font-cinzel">
                   Çerez Politikası
                 </a>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors font-cinzel whitespace-nowrap">
+                <a href="#" className="text-gray-400 hover:text-white transition-colors font-cinzel">
                   KVKK
                 </a>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors font-cinzel whitespace-nowrap">
+                <a href="#" className="text-gray-400 hover:text-white transition-colors font-cinzel">
                   Sorumluluk Reddi
                 </a>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors font-cinzel whitespace-nowrap">
+                <a href="#" className="text-gray-400 hover:text-white transition-colors font-cinzel">
                   İletişim
                 </a>
               </div>
