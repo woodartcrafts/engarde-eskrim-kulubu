@@ -161,17 +161,85 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-12">
-        <div className="container mx-auto px-4 text-center">
-          <div className="mb-8">
-            <h3 className="text-2xl font-bold mb-4 font-cinzel-black">Engarde Eskrim Kulübü</h3>
-            <p className="text-gray-400 font-cinzel">
-              Modern eskrim teknikleri ve profesyonel eğitim
-            </p>
+        <div className="container mx-auto px-4">
+          {/* Ana Footer İçeriği */}
+          <div className="grid md:grid-cols-4 gap-8 mb-8">
+            {/* Kulüp Bilgileri */}
+            <div className="md:col-span-2">
+              <h3 className="text-2xl font-bold mb-4 font-cinzel-black">Engarde Eskrim Kulübü</h3>
+              <p className="text-gray-400 font-cinzel mb-4">
+                Modern eskrim teknikleri ve profesyonel eğitim. 
+                Güvenli ve eğlenceli bir ortamda eskrim sanatını öğrenin.
+              </p>
+              <div className="flex space-x-4">
+                <a href="#" className="text-gray-400 hover:text-white transition-colors">
+                  <span className="text-xl">📧</span>
+                </a>
+                <a href="#" className="text-gray-400 hover:text-white transition-colors">
+                  <span className="text-xl">📱</span>
+                </a>
+                <a href="#" className="text-gray-400 hover:text-white transition-colors">
+                  <span className="text-xl">📍</span>
+                </a>
+              </div>
+            </div>
+
+            {/* Hızlı Linkler */}
+            <div>
+              <h4 className="text-lg font-semibold mb-4 font-cinzel-bold">Hızlı Linkler</h4>
+              <ul className="space-y-2 font-cinzel">
+                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Ana Sayfa</a></li>
+                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Hakkımızda</a></li>
+                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Dersler</a></li>
+                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Eğitmenler</a></li>
+                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Galeri</a></li>
+                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">İletişim</a></li>
+              </ul>
+            </div>
+
+            {/* Hizmetler */}
+            <div>
+              <h4 className="text-lg font-semibold mb-4 font-cinzel-bold">Hizmetlerimiz</h4>
+              <ul className="space-y-2 font-cinzel">
+                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Foil Eğitimi</a></li>
+                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Epee Eğitimi</a></li>
+                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Sabre Eğitimi</a></li>
+                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Yarışma Hazırlığı</a></li>
+                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Ekipman Satışı</a></li>
+                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Özel Dersler</a></li>
+              </ul>
+            </div>
           </div>
+
+          {/* Yasal Linkler */}
           <div className="border-t border-gray-800 pt-8">
-            <p className="text-gray-400 font-cinzel">
-              © 2024 Engarde Eskrim Kulübü. Tüm hakları saklıdır.
-            </p>
+            <div className="flex flex-col md:flex-row justify-between items-center">
+              <div className="mb-4 md:mb-0">
+                <p className="text-gray-400 font-cinzel">
+                  © 2024 Engarde Eskrim Kulübü. Tüm hakları saklıdır.
+                </p>
+              </div>
+              <div className="flex flex-wrap gap-6 text-sm">
+                <a href="#" className="text-gray-400 hover:text-white transition-colors font-cinzel">
+                  Gizlilik Politikası
+                </a>
+                <a href="#" className="text-gray-400 hover:text-white transition-colors font-cinzel">
+                  Kullanım Şartları
+                </a>
+                <a href="#" className="text-gray-400 hover:text-white transition-colors font-cinzel">
+                  Çerez Politikası
+                </a>
+                <a href="#" className="text-gray-400 hover:text-white transition-colors font-cinzel">
+                  KVKK
+                </a>
+                <a href="#" className="text-gray-400 hover:text-white transition-colors font-cinzel">
+                  Sorumluluk Reddi
+                </a>
+                <a href="#" className="text-gray-400 hover:text-white transition-colors font-cinzel">
+                  İletişim
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </footer>
