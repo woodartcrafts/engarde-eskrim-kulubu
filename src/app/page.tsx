@@ -11,11 +11,11 @@ export default function Home() {
             <div className="flex flex-col lg:flex-row items-center justify-center gap-8 mb-8">
               <div className="w-32 h-32 lg:w-40 lg:h-40 bg-white/20 rounded-full flex items-center justify-center animate-fade-in knight-border overflow-hidden">
                 <Image
-                  src="/engarde-logo.svg"
+                  src="/engardelogo"
                   alt="Engarde Eskrim Logo"
                   width={120}
                   height={120}
-                  className="w-24 h-24 lg:w-32 lg:h-32"
+                  className="w-24 h-24 lg:w-32 lg:h-32 rounded-full"
                   priority
                 />
               </div>
