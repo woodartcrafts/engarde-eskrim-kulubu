@@ -75,7 +75,7 @@ export default function RootLayout({
         <link rel="manifest" href="/manifest.json" />
       </head>
       <body
-        className="antialiased bg-gradient-to-br from-slate-50 to-blue-50 dark:from-slate-900 dark:to-slate-800 min-h-screen font-serif"
+        className="antialiased bg-gradient-to-br from-slate-900 to-slate-800 dark:from-slate-950 dark:to-slate-900 min-h-screen font-serif"
       >
         {children}
       </body>

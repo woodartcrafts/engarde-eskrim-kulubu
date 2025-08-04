@@ -26,6 +26,545 @@ body {
   font-weight: 400;
 }
 
+/* Header'dan Body'ye Yumuşak Geçiş Gradients */
+.header-to-body-gradient {
+  background: linear-gradient(
+    180deg,
+    #1E3A8A 0%,
+    #312E81 10%,
+    #3730A3 20%,
+    #5B21B6 30%,
+    #6D28D9 40%,
+    #7C3AED 50%,
+    #8B5CF6 60%,
+    #A855F7 70%,
+    #BE185D 80%,
+    #DC2626 90%,
+    #EA580C 95%,
+    #B91C1C 100%
+  );
+}
+
+.header-to-body-gradient-soft {
+  background: linear-gradient(
+    180deg,
+    #1E3A8A 0%,
+    #312E81 5%,
+    #3730A3 10%,
+    #4338CA 15%,
+    #5B21B6 20%,
+    #6D28D9 25%,
+    #7C3AED 30%,
+    #8B5CF6 35%,
+    #A855F7 40%,
+    #C084FC 45%,
+    #D946EF 50%,
+    #BE185D 55%,
+    #DC2626 60%,
+    #EA580C 65%,
+    #F97316 70%,
+    #EF4444 75%,
+    #F59E0B 80%,
+    #F97316 85%,
+    #EA580C 90%,
+    #DC2626 95%,
+    #B91C1C 100%
+  );
+}
+
+.header-to-body-gradient-ultra-soft {
+  background: linear-gradient(
+    180deg,
+    #1E3A8A 0%,
+    #312E81 3%,
+    #3730A3 6%,
+    #4338CA 9%,
+    #5B21B6 12%,
+    #6D28D9 15%,
+    #7C3AED 18%,
+    #8B5CF6 21%,
+    #A855F7 24%,
+    #C084FC 27%,
+    #D946EF 30%,
+    #EC4899 33%,
+    #BE185D 36%,
+    #DC2626 39%,
+    #EA580C 42%,
+    #F97316 45%,
+    #EF4444 48%,
+    #F59E0B 51%,
+    #F97316 54%,
+    #EA580C 57%,
+    #DC2626 60%,
+    #B91C1C 63%,
+    #991B1B 66%,
+    #7F1D1D 69%,
+    #DC2626 72%,
+    #EA580C 75%,
+    #F97316 78%,
+    #EF4444 81%,
+    #F59E0B 84%,
+    #F97316 87%,
+    #EA580C 90%,
+    #DC2626 93%,
+    #B91C1C 96%,
+    #991B1B 100%
+  );
+}
+
+/* Header Background with Smooth Transition */
+.header-background {
+  background: linear-gradient(
+    135deg,
+    #1E3A8A 0%,
+    #312E81 15%,
+    #3730A3 30%,
+    #5B21B6 45%,
+    #7C3AED 60%,
+    #BE185D 75%,
+    #DC2626 90%,
+    #B91C1C 100%
+  );
+  position: relative;
+  overflow: hidden;
+}
+
+.header-background::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    180deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.05) 25%,
+    rgba(255, 255, 255, 0.1) 50%,
+    rgba(255, 255, 255, 0.05) 75%,
+    transparent 100%
+  );
+  pointer-events: none;
+}
+
+/* Body Background with Header Transition */
+.body-background {
+  background: linear-gradient(
+    180deg,
+    #0F172A 0%,
+    #1E293B 10%,
+    #334155 20%,
+    #475569 30%,
+    #64748B 40%,
+    #94A3B8 50%,
+    #CBD5E1 60%,
+    #E2E8F0 70%,
+    #F1F5F9 80%,
+    #F8FAFC 90%,
+    #FFFFFF 100%
+  );
+}
+
+/* Dark mode body background */
+.dark .body-background {
+  background: linear-gradient(
+    180deg,
+    #020617 0%,
+    #0F172A 10%,
+    #1E293B 20%,
+    #334155 30%,
+    #475569 40%,
+    #64748B 50%,
+    #94A3B8 60%,
+    #CBD5E1 70%,
+    #E2E8F0 80%,
+    #F1F5F9 90%,
+    #F8FAFC 100%
+  );
+}
+
+/* Smooth transition between sections */
+.section-transition {
+  position: relative;
+}
+
+.section-transition::before {
+  content: '';
+  position: absolute;
+  top: -100px;
+  left: 0;
+  right: 0;
+  height: 100px;
+  background: linear-gradient(
+    180deg,
+    transparent 0%,
+    rgba(15, 23, 42, 0.2) 20%,
+    rgba(15, 23, 42, 0.4) 40%,
+    rgba(15, 23, 42, 0.6) 60%,
+    rgba(15, 23, 42, 0.8) 80%,
+    rgba(15, 23, 42, 1) 100%
+  );
+  pointer-events: none;
+}
+
+.dark .section-transition::before {
+  background: linear-gradient(
+    180deg,
+    transparent 0%,
+    rgba(2, 6, 23, 0.2) 20%,
+    rgba(2, 6, 23, 0.4) 40%,
+    rgba(2, 6, 23, 0.6) 60%,
+    rgba(2, 6, 23, 0.8) 80%,
+    rgba(2, 6, 23, 1) 100%
+  );
+}
+
+/* Sectionlar arası yumuşak geçiş için yeni sınıflar */
+.section-soft-transition {
+  position: relative;
+}
+
+.section-soft-transition::before {
+  content: '';
+  position: absolute;
+  top: -150px;
+  left: 0;
+  right: 0;
+  height: 150px;
+  background: linear-gradient(
+    180deg,
+    transparent 0%,
+    rgba(15, 23, 42, 0.1) 10%,
+    rgba(15, 23, 42, 0.2) 20%,
+    rgba(15, 23, 42, 0.3) 30%,
+    rgba(15, 23, 42, 0.4) 40%,
+    rgba(15, 23, 42, 0.5) 50%,
+    rgba(15, 23, 42, 0.6) 60%,
+    rgba(15, 23, 42, 0.7) 70%,
+    rgba(15, 23, 42, 0.8) 80%,
+    rgba(15, 23, 42, 0.9) 90%,
+    rgba(15, 23, 42, 1) 100%
+  );
+  pointer-events: none;
+}
+
+.dark .section-soft-transition::before {
+  background: linear-gradient(
+    180deg,
+    transparent 0%,
+    rgba(2, 6, 23, 0.1) 10%,
+    rgba(2, 6, 23, 0.2) 20%,
+    rgba(2, 6, 23, 0.3) 30%,
+    rgba(2, 6, 23, 0.4) 40%,
+    rgba(2, 6, 23, 0.5) 50%,
+    rgba(2, 6, 23, 0.6) 60%,
+    rgba(2, 6, 23, 0.7) 70%,
+    rgba(2, 6, 23, 0.8) 80%,
+    rgba(2, 6, 23, 0.9) 90%,
+    rgba(2, 6, 23, 1) 100%
+  );
+}
+
+/* Kulüp özellikleri bölümü için özel geçiş */
+.features-section {
+  position: relative;
+  background: linear-gradient(
+    180deg,
+    #0F172A 0%,
+    #1E293B 10%,
+    #334155 20%,
+    #475569 30%,
+    #64748B 40%,
+    #94A3B8 50%,
+    #CBD5E1 60%,
+    #E2E8F0 70%,
+    #F1F5F9 80%,
+    #F8FAFC 90%,
+    #FFFFFF 100%
+  );
+}
+
+.features-section::before {
+  content: '';
+  position: absolute;
+  top: -120px;
+  left: 0;
+  right: 0;
+  height: 120px;
+  background: linear-gradient(
+    180deg,
+    transparent 0%,
+    rgba(15, 23, 42, 0.1) 15%,
+    rgba(15, 23, 42, 0.2) 30%,
+    rgba(15, 23, 42, 0.3) 45%,
+    rgba(15, 23, 42, 0.4) 60%,
+    rgba(15, 23, 42, 0.5) 75%,
+    rgba(15, 23, 42, 0.6) 85%,
+    rgba(15, 23, 42, 0.7) 90%,
+    rgba(15, 23, 42, 0.8) 95%,
+    rgba(15, 23, 42, 1) 100%
+  );
+  pointer-events: none;
+}
+
+.dark .features-section {
+  background: linear-gradient(
+    180deg,
+    #020617 0%,
+    #0F172A 10%,
+    #1E293B 20%,
+    #334155 30%,
+    #475569 40%,
+    #64748B 50%,
+    #94A3B8 60%,
+    #CBD5E1 70%,
+    #E2E8F0 80%,
+    #F1F5F9 90%,
+    #F8FAFC 100%
+  );
+}
+
+.dark .features-section::before {
+  background: linear-gradient(
+    180deg,
+    transparent 0%,
+    rgba(2, 6, 23, 0.1) 15%,
+    rgba(2, 6, 23, 0.2) 30%,
+    rgba(2, 6, 23, 0.3) 45%,
+    rgba(2, 6, 23, 0.4) 60%,
+    rgba(2, 6, 23, 0.5) 75%,
+    rgba(2, 6, 23, 0.6) 85%,
+    rgba(2, 6, 23, 0.7) 90%,
+    rgba(2, 6, 23, 0.8) 95%,
+    rgba(2, 6, 23, 1) 100%
+  );
+}
+
+/* About section için özel geçiş */
+.about-section {
+  position: relative;
+  background: linear-gradient(
+    180deg,
+    #1E293B 0%,
+    #334155 10%,
+    #475569 20%,
+    #64748B 30%,
+    #94A3B8 40%,
+    #CBD5E1 50%,
+    #E2E8F0 60%,
+    #F1F5F9 70%,
+    #F8FAFC 80%,
+    #FFFFFF 90%,
+    #FFFFFF 100%
+  );
+}
+
+.about-section::before {
+  content: '';
+  position: absolute;
+  top: -120px;
+  left: 0;
+  right: 0;
+  height: 120px;
+  background: linear-gradient(
+    180deg,
+    transparent 0%,
+    rgba(30, 41, 59, 0.1) 15%,
+    rgba(30, 41, 59, 0.2) 30%,
+    rgba(30, 41, 59, 0.3) 45%,
+    rgba(30, 41, 59, 0.4) 60%,
+    rgba(30, 41, 59, 0.5) 75%,
+    rgba(30, 41, 59, 0.6) 85%,
+    rgba(30, 41, 59, 0.7) 90%,
+    rgba(30, 41, 59, 0.8) 95%,
+    rgba(30, 41, 59, 1) 100%
+  );
+  pointer-events: none;
+}
+
+.dark .about-section {
+  background: linear-gradient(
+    180deg,
+    #0F172A 0%,
+    #1E293B 10%,
+    #334155 20%,
+    #475569 30%,
+    #64748B 40%,
+    #94A3B8 50%,
+    #CBD5E1 60%,
+    #E2E8F0 70%,
+    #F1F5F9 80%,
+    #F8FAFC 90%,
+    #FFFFFF 100%
+  );
+}
+
+.dark .about-section::before {
+  background: linear-gradient(
+    180deg,
+    transparent 0%,
+    rgba(15, 23, 42, 0.1) 15%,
+    rgba(15, 23, 42, 0.2) 30%,
+    rgba(15, 23, 42, 0.3) 45%,
+    rgba(15, 23, 42, 0.4) 60%,
+    rgba(15, 23, 42, 0.5) 75%,
+    rgba(15, 23, 42, 0.6) 85%,
+    rgba(15, 23, 42, 0.7) 90%,
+    rgba(15, 23, 42, 0.8) 95%,
+    rgba(15, 23, 42, 1) 100%
+  );
+}
+
+/* Contact section için özel geçiş */
+.contact-section {
+  position: relative;
+  background: linear-gradient(
+    180deg,
+    #334155 0%,
+    #475569 10%,
+    #64748B 20%,
+    #94A3B8 30%,
+    #CBD5E1 40%,
+    #E2E8F0 50%,
+    #F1F5F9 60%,
+    #F8FAFC 70%,
+    #FFFFFF 80%,
+    #FFFFFF 90%,
+    #FFFFFF 100%
+  );
+}
+
+.contact-section::before {
+  content: '';
+  position: absolute;
+  top: -120px;
+  left: 0;
+  right: 0;
+  height: 120px;
+  background: linear-gradient(
+    180deg,
+    transparent 0%,
+    rgba(51, 65, 85, 0.1) 15%,
+    rgba(51, 65, 85, 0.2) 30%,
+    rgba(51, 65, 85, 0.3) 45%,
+    rgba(51, 65, 85, 0.4) 60%,
+    rgba(51, 65, 85, 0.5) 75%,
+    rgba(51, 65, 85, 0.6) 85%,
+    rgba(51, 65, 85, 0.7) 90%,
+    rgba(51, 65, 85, 0.8) 95%,
+    rgba(51, 65, 85, 1) 100%
+  );
+  pointer-events: none;
+}
+
+.dark .contact-section {
+  background: linear-gradient(
+    180deg,
+    #1E293B 0%,
+    #334155 10%,
+    #475569 20%,
+    #64748B 30%,
+    #94A3B8 40%,
+    #CBD5E1 50%,
+    #E2E8F0 60%,
+    #F1F5F9 70%,
+    #F8FAFC 80%,
+    #FFFFFF 90%,
+    #FFFFFF 100%
+  );
+}
+
+.dark .contact-section::before {
+  background: linear-gradient(
+    180deg,
+    transparent 0%,
+    rgba(30, 41, 59, 0.1) 15%,
+    rgba(30, 41, 59, 0.2) 30%,
+    rgba(30, 41, 59, 0.3) 45%,
+    rgba(30, 41, 59, 0.4) 60%,
+    rgba(30, 41, 59, 0.5) 75%,
+    rgba(30, 41, 59, 0.6) 85%,
+    rgba(30, 41, 59, 0.7) 90%,
+    rgba(30, 41, 59, 0.8) 95%,
+    rgba(30, 41, 59, 1) 100%
+  );
+}
+
+/* Instagram section için özel geçiş */
+.instagram-section {
+  position: relative;
+  background: linear-gradient(
+    180deg,
+    #831843 0%,
+    #9D174D 10%,
+    #BE185D 20%,
+    #DB2777 30%,
+    #EC4899 40%,
+    #F472B6 50%,
+    #F9A8D4 60%,
+    #FBCFE8 70%,
+    #FCE7F3 80%,
+    #FDF2F8 90%,
+    #FFFFFF 100%
+  );
+}
+
+.instagram-section::before {
+  content: '';
+  position: absolute;
+  top: -120px;
+  left: 0;
+  right: 0;
+  height: 120px;
+  background: linear-gradient(
+    180deg,
+    transparent 0%,
+    rgba(131, 24, 67, 0.1) 15%,
+    rgba(131, 24, 67, 0.2) 30%,
+    rgba(131, 24, 67, 0.3) 45%,
+    rgba(131, 24, 67, 0.4) 60%,
+    rgba(131, 24, 67, 0.5) 75%,
+    rgba(131, 24, 67, 0.6) 85%,
+    rgba(131, 24, 67, 0.7) 90%,
+    rgba(131, 24, 67, 0.8) 95%,
+    rgba(131, 24, 67, 1) 100%
+  );
+  pointer-events: none;
+}
+
+.dark .instagram-section {
+  background: linear-gradient(
+    180deg,
+    #581C87 0%,
+    #7C3AED 10%,
+    #8B5CF6 20%,
+    #A855F7 30%,
+    #C084FC 40%,
+    #D8B4FE 50%,
+    #E9D5FF 60%,
+    #F3E8FF 70%,
+    #FAF5FF 80%,
+    #FDF4FF 90%,
+    #FFFFFF 100%
+  );
+}
+
+.dark .instagram-section::before {
+  background: linear-gradient(
+    180deg,
+    transparent 0%,
+    rgba(88, 28, 135, 0.1) 15%,
+    rgba(88, 28, 135, 0.2) 30%,
+    rgba(88, 28, 135, 0.3) 45%,
+    rgba(88, 28, 135, 0.4) 60%,
+    rgba(88, 28, 135, 0.5) 75%,
+    rgba(88, 28, 135, 0.6) 85%,
+    rgba(88, 28, 135, 0.7) 90%,
+    rgba(88, 28, 135, 0.8) 95%,
+    rgba(88, 28, 135, 1) 100%
+  );
+}
+
 /* Şövalye/Kral Tarzı Yazı Tipi Stilleri */
 .font-cinzel {
   font-family: 'Cinzel', serif;

@@ -83,13 +83,13 @@ export default function BlogPage() {
   return (
     <div className="min-h-screen overflow-x-hidden w-full max-w-full">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-blue-600 via-purple-600 to-indigo-700 text-white py-2 lg:py-1 flex items-center w-full transition-all duration-300" id="header">
+      <section className="header-background text-white py-2 lg:py-1 flex items-center w-full transition-all duration-300" id="header">
         <div className="absolute inset-0 bg-black/20"></div>
         <div className="relative z-10 container mx-auto px-0 py-1 lg:py-0.5 w-full">
           <div className="text-center max-w-6xl mx-auto w-full">
             <div className="flex flex-row items-center justify-between gap-4 mb-0">
               {/* Logo - Sol Taraf */}
-              <div className="w-[8rem] h-[8rem] md:w-[10rem] md:h-[10rem] lg:w-[10rem] lg:h-[10rem] flex items-center justify-center animate-fade-in ml-2.5">
+              <Link href="/" className="w-[8rem] h-[8rem] md:w-[10rem] md:h-[10rem] lg:w-[10rem] lg:h-[10rem] flex items-center justify-center animate-fade-in ml-2.5 hover:scale-105 transition-transform duration-300">
                 <Suspense fallback={<div className="w-full h-full bg-gray-200 animate-pulse rounded"></div>}>
                   <Image
                     src="/engardelogo.png"
@@ -103,7 +103,7 @@ export default function BlogPage() {
                     blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R//2Q=="
                   />
                 </Suspense>
-              </div>
+              </Link>
               
               {/* Başlık - Tam Ortada */}
               <div className="flex-1 text-center">
@@ -125,9 +125,9 @@ export default function BlogPage() {
                   <Link href="/blog" className="text-white hover:text-blue-200 transition-colors font-cinzel-bold text-sm lg:text-base">
                     Blog
                   </Link>
-                  <button className="bg-white/20 hover:bg-white/30 text-white px-4 py-2 rounded-full font-cinzel-bold text-sm lg:text-base transition-all duration-300 border border-white/30 hover:border-white/50">
+                  <Link href="/contact" className="bg-white/20 hover:bg-white/30 text-white px-4 py-2 rounded-full font-cinzel-bold text-sm lg:text-base transition-all duration-300 border border-white/30 hover:border-white/50">
                     İletişim
-                  </button>
+                  </Link>
                 </nav>
 
                 {/* Mobile Menu Button */}
@@ -160,9 +160,9 @@ export default function BlogPage() {
                 >
                   Blog
                 </Link>
-                <button className="bg-white/20 hover:bg-white/30 text-white px-4 py-2 rounded-full font-cinzel-bold text-base transition-all duration-300 border border-white/30 hover:border-white/50 w-full text-center">
+                <Link href="/contact" className="bg-white/20 hover:bg-white/30 text-white px-4 py-2 rounded-full font-cinzel-bold text-base transition-all duration-300 border border-white/30 hover:border-white/50 w-full text-center">
                   İletişim
-                </button>
+                </Link>
               </nav>
             </div>
           </div>
@@ -194,7 +194,7 @@ export default function BlogPage() {
       </section>
 
       {/* Blog Posts Section */}
-      <section className="py-20 bg-white dark:bg-slate-900 relative w-full">
+      <section className="py-20 features-section relative w-full">
         <div className="absolute inset-0 bg-gradient-to-r from-blue-50/30 to-purple-50/30 dark:from-blue-900/10 dark:to-purple-900/10 parallax-bg"></div>
         <div className="container mx-auto px-4 w-full">
                      <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
@@ -293,7 +293,7 @@ export default function BlogPage() {
       </section>
 
       {/* Newsletter Section */}
-      <section className="py-1 bg-gradient-to-br from-slate-50 to-blue-50 dark:from-slate-900 dark:to-slate-800 relative w-full">
+      <section className="py-1 about-section relative w-full">
         <div className="absolute inset-0 bg-gradient-to-br from-blue-100/20 to-purple-100/20 dark:from-blue-800/10 dark:to-purple-800/10 parallax-bg-reverse"></div>
         <div className="container mx-auto px-4 w-full">
           <div className="max-w-4xl mx-auto text-center">
@@ -318,6 +318,91 @@ export default function BlogPage() {
           </div>
         </div>
       </section>
+
+      {/* Footer */}
+      <footer className="bg-gradient-to-br from-gray-900 via-gray-700 to-gray-800 text-white py-8 w-full">
+        <div className="container mx-auto px-4 w-full">
+          {/* Ana Footer İçeriği */}
+          <div className="grid md:grid-cols-3 gap-6 mb-6">
+            {/* Kulüp Bilgileri */}
+            <div>
+              <h3 className="text-xl font-bold mb-3 font-cinzel-black">Engarde Eskrim Kulübü</h3>
+              <p className="text-gray-400 font-cinzel mb-3 text-sm">
+                Modern eskrim teknikleri ve profesyonel eğitim. 
+                Güvenli ve eğlenceli bir ortamda eskrim sanatını öğrenin.
+              </p>
+              <div className="flex space-x-3">
+                <a href="#" className="text-gray-400 hover:text-white transition-colors">
+                  <span className="text-lg">📧</span>
+                </a>
+                <a href="#" className="text-gray-400 hover:text-white transition-colors">
+                  <span className="text-lg">📱</span>
+                </a>
+                <a href="#" className="text-gray-400 hover:text-white transition-colors">
+                  <span className="text-lg">📍</span>
+                </a>
+              </div>
+            </div>
+
+            {/* Hızlı Linkler */}
+            <div>
+              <h4 className="text-base font-semibold mb-3 font-cinzel-bold">Hızlı Linkler</h4>
+              <ul className="space-y-1 font-cinzel text-sm">
+                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Ana Sayfa</a></li>
+                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Hakkımızda</a></li>
+                <li><Link href="/blog" className="text-gray-400 hover:text-white transition-colors">Blog</Link></li>
+                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Eğitmenler</a></li>
+                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">İletişim</a></li>
+              </ul>
+            </div>
+
+            {/* Hizmetler */}
+            <div>
+              <h4 className="text-base font-semibold mb-3 font-cinzel-bold">Hizmetlerimiz</h4>
+              <ul className="space-y-1 font-cinzel text-sm">
+                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Foil Eğitimi</a></li>
+                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Epee Eğitimi</a></li>
+                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Sabre Eğitimi</a></li>
+                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Ekipman Satışı</a></li>
+                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Özel Dersler</a></li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Yasal Linkler */}
+          <div className="border-t border-gray-800 pt-6">
+            {/* Copyright - Tek Satır */}
+            <div className="text-center mb-3">
+              <p className="text-orange-300 font-cinzel text-xs font-light">
+                © 2024 Engarde Eskrim Kulübü. Tüm hakları saklıdır.
+              </p>
+            </div>
+            {/* Yasal Linkler - Tek Satır */}
+            <div className="text-center">
+              <div className="flex flex-wrap justify-center gap-3 text-xs">
+                <a href="#" className="text-orange-300 hover:text-orange-200 transition-colors font-cinzel font-light">
+                  Gizlilik Politikası
+                </a>
+                <a href="#" className="text-orange-300 hover:text-orange-200 transition-colors font-cinzel font-light">
+                  Kullanım Şartları
+                </a>
+                <a href="#" className="text-orange-300 hover:text-orange-200 transition-colors font-cinzel font-light">
+                  Çerez Politikası
+                </a>
+                <a href="#" className="text-orange-300 hover:text-orange-200 transition-colors font-cinzel font-light">
+                  KVKK
+                </a>
+                <a href="#" className="text-orange-300 hover:text-orange-200 transition-colors font-cinzel font-light">
+                  Sorumluluk Reddi
+                </a>
+                <a href="#" className="text-orange-300 hover:text-orange-200 transition-colors font-cinzel font-light">
+                  İletişim
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 } 
