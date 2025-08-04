@@ -1,0 +1,53 @@
+# Engarde Eskrim Kulübü - Cursor Rules
+
+## Kullanıcı Tercihleri
+
+### GitHub Yükleme Politikası
+- **KULLANICI ONAYI GEREKLİ**: GitHub'a yükleme yapmadan önce mutlaka kullanıcıdan onay alınmalı
+- **Otomatik Push YOK**: Değişiklikler otomatik olarak GitHub'a gönderilmemeli
+- **Onay Süreci**: "GitHub'a yüklememi ister misiniz?" şeklinde sorulmalı
+
+### UI/UX Tercihleri
+- **Minimal Whitespace**: Çok minimal boşluk ve padding kullanılmalı
+- **Dark Colors**: Arka planlarda koyu renkler tercih ediliyor
+- **Smooth Transitions**: Bölümler arası yumuşak geçişler isteniyor
+- **Compact Design**: Kompakt ve yoğun tasarım tercih ediliyor
+
+## Proje Özellikleri
+
+### Teknik Stack
+- Next.js 15.4.5
+- React 19.1.0
+- TypeScript
+- Tailwind CSS 4
+- Geist Font Family
+
+### Dosya Yapısı
+- App Router kullanımı
+- TypeScript dosyaları (.tsx)
+- Memory Bank sistemi aktif
+- Component-based yapı
+
+### Stil Rehberi
+- Cinzel font ailesi (eskrim teması)
+- Knight-border sınıfları
+- Gradient arka planlar
+- Responsive tasarım
+
+## Çalışma Kuralları
+
+### Memory Bank Kullanımı
+- Her oturum başında memory-bank dosyalarını oku
+- Değişiklikleri memory-bank'a kaydet
+- Aktif context'i güncel tut
+
+### Kod Yazma Kuralları
+- Türkçe yorumlar kullan
+- Semantic HTML yapısı
+- Accessibility standartları
+- Performance optimizasyonu
+
+### Git Workflow
+- Anlamlı commit mesajları
+- Kullanıcı onayı sonrası push
+- Branch stratejisi (gerekirse) 

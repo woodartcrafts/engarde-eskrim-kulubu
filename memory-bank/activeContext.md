@@ -24,6 +24,12 @@ Engarde Eskrim Kulübü web sitesini oluşturmak
 - TypeScript kullanımı devam edecek
 - Mevcut dosya yapısı korunacak
 
+## Kullanıcı Tercihleri
+- **GitHub Yükleme**: Kullanıcı onay vermeden GitHub'a yükleme yapılmamalı
+- **Minimal Whitespace**: UI'da çok minimal boşluk ve padding tercih ediliyor
+- **Dark Colors**: Arka planlarda koyu renkler tercih ediliyor
+- **Smooth Transitions**: Bölümler arası yumuşak geçişler isteniyor
+
 ## Eskrim Kulübü Özellikleri
 - **Hero Section**: Eskrim ikonu ve "Engarde Eskrim" başlığı
 - **Özellikler**: Profesyonel eğitim, modern ekipman, yarışma fırsatları
